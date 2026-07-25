@@ -98,7 +98,7 @@
 
 | I2C Master Block Diagram | I2C Slave Block Diagram |
 | :---: | :---: |
-| <img src="https://github.com/user-attachments/assets/1037507-490c6c47-3d0c-40e2-8cb6-adca34ac185c" width="100%"/> | <img src="https://github.com/user-attachments/assets/1028500-fe589b74-2c36-45f8-9dc8-e6b4393f37bc" width="100%"/> |
+| <img src="https://github.com/user-attachments/assets/490c6c47-3d0c-40e2-8cb6-adca34ac185c" width="100%"/> | <img src="https://github.com/user-attachments/assets/fe589b74-2c36-45f8-9dc8-e6b4393f37bc" width="100%"/> |
 
 <p align="center">
   <img width="85%" alt="I2C Slave FSM" src="https://github.com/user-attachments/assets/287ae3f9-6968-4b59-b1e3-91ffe8e2cb0a" /><br>
