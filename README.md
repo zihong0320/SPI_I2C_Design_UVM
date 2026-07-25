@@ -8,10 +8,9 @@
 ## 📌 0. Summary
 
 ### 🎯 Overview
-- **SPI (Serial Peripheral Interface) 분석 & 설계** : Protocol Specification 분석 및 Master/Slave RTL 설계
+- **SPI/I2C Specification 분석 & 설계** : Protocol Specification 분석 및 SPI 및 I2C Master/Slave RTL 설계
 - **SPI Loopback Architecture 구축 & UVM 검증** : UVM 기반 Random Testbench 환경에서의 기능 검증
-- **I2C (Inter-Integrated Circuit) 분석 & 설계** Protocol Specification 분석 및 Open-Drain / Inout 포트 기반 Master/Slave RTL 설계
-- **FPGA 하드웨어 검증**: Basys3 2대를 활용한 실시간 Board-to-Board 직렬 데이터 송수신 실증 (Switch / FND / LED 연동)
+- **FPGA 하드웨어 검증** : Basys3 2대를 활용한 실시간 Board-to-Board 직렬 데이터 송수신 실증 (Switch / FND / LED 연동)
 
 ---
 
