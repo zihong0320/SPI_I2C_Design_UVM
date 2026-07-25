@@ -1,6 +1,6 @@
 # 🗜️ SPI & I2C Master/Slave Design and UVM Verification
 
-> **SystemVerilog 기반 SPI / I2C 프로토콜 컨트롤러 설계 및 UVM(Universal Verification Methodology) 루프백 기능 검증**  
+> **SystemVerilog 기반 SPI / I2C 프로토콜 설계 및 UVM 루프백 기능 검증**  
 > Dual FPGA (Basys3) 보드 간 직렬 통신 실증 및 Synopsys VCS 환경 기반 100% Functional Coverage 달성
 
 ---
