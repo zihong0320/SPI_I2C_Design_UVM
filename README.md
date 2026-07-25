@@ -33,7 +33,6 @@
 <p align="center">
   <img width="50%" alt="SPI Protocol" src="https://github.com/user-attachments/assets/ddea3481-b60f-415e-8d0f-9ff99bdea73c" />
 </p>
-<SPI Protocol>
 
 * **주요 특징**
   * Synchronous
@@ -50,9 +49,9 @@
 <p align="center">
   <img width="80%" alt="SPI Modes" src="https://github.com/user-attachments/assets/88a17380-5a9d-4742-bbec-cc33ca5a8d92" />
 </p>
-<Cpol, CPHA>
+
 * **SPI Operating Modes (CPOL & CPHA)**
-  * Master와 Slave 간의 클럭 극성(`CPOL`) 및 위상(`CPHA`) 설정이 상호 일치해야 정상적인 데이터 샘플링이 가능
+  * Master와 Slave 간의 클럭 극성(`CPOL`) 및 위상(`CPHA`) 설정이 상호 일치해야 정상적인 데이터 샘플링이 가능합니다.
   * **Mode 0 (0,0)**: Idle SCLK = Low / Rising Edge: Read(Sample), Falling Edge: Write(Shift)
   * **Mode 1 (0,1)**: Idle SCLK = Low / Rising Edge: Write(Shift), Falling Edge: Read(Sample)
   * **Mode 2 (1,0)**: Idle SCLK = High / Falling Edge: Read(Sample), Rising Edge: Write(Shift)
@@ -80,7 +79,7 @@
   * **STOP Condition**: `SCL` = High 유지 중 `SDA` Rising Edge
   * **Data Valid**: `SCL` = High 동안 `SDA` 데이터 값 유지
 * **Inout Port & Bus Driver Control**
-  * Half-Duplex 특성상 단일 `SDA` 라인을 공유하므로 High-Impedance (`z`) 상태 제어를 통해 입력/출력 충돌을 방지해야 함.
+  * Half-Duplex 특성상 단일 `SDA` 라인을 공유하므로 High-Impedance (`z`) 상태 제어를 통해 입력/출력 충돌을 방지합니다.
 
 ---
 
@@ -90,17 +89,15 @@
 
 | SPI Master Block Diagram | SPI Slave Block Diagram |
 | :---: | :---: |
-| <img width="1095" height="498" alt="image" src="https://github.com/user-attachments/assets/74e9face-3062-4c21-85a4-1557a028d82f" />
- | <img src="https://github.com/user-attachments/assets/e125dd6f-ea3f-42f9-87d4-15b738fd4ec1" width="100%"/> |
+| <img src="https://github.com/user-attachments/assets/74e9face-3062-4c21-85a4-1557a028d82f" width="100%"/> | <img src="https://github.com/user-attachments/assets/e125dd6f-ea3f-42f9-87d4-15b738fd4ec1" width="100%"/> |
 
-Master 모듈
-- BTN_Debounce : start 버튼 누를 시 좀더 잘 인식하게 하기 위함..
-- SPI_MASTER : cpol = 0, cpha = 0 기준으로 동작 구현, rx data를 FND와 LED로 출력
-- FND_Controller : tx_data와 rx data를 FND로 출력
-
-Slave 모듈
-- SPI_MASTER : cpol = 0, cpha = 0 기준으로 동작 구현, rx data를 FND와 LED로 출력
-- FND_Controller : tx_data와 rx data를 FND로 출력
+* **Master Module**
+  * `BTN_Debounce` : Start 버튼 입력 디바운싱을 통한 안정적인 신호 검출
+  * `SPI_MASTER` : Mode 0 (`CPOL=0, CPHA=0`) 기준 동작 구현 및 수신 데이터(`rx_data`) LED 출력
+  * `FND_Controller` : 송신 데이터(`tx_data`) 및 수신 데이터(`rx_data`) FND 세그먼트 출력
+* **Slave Module**
+  * `SPI_SLAVE` : Mode 0 (`CPOL=0, CPHA=0`) 기준 동작 구현 및 수신 데이터(`rx_data`) LED 출력
+  * `FND_Controller` : 송신 데이터(`tx_data`) 및 수신 데이터(`rx_data`) FND 세그먼트 출력
 
 <p align="center">
   <img width="80%" alt="SPI Slave FSM" src="https://github.com/user-attachments/assets/09538a6e-6510-4a05-bdaa-d90c41cb9972" /><br>
@@ -115,14 +112,13 @@ Slave 모듈
 | :---: | :---: |
 | <img src="https://github.com/user-attachments/assets/490c6c47-3d0c-40e2-8cb6-adca34ac185c" width="100%"/> | <img src="https://github.com/user-attachments/assets/fe589b74-2c36-45f8-9dc8-e6b4393f37bc" width="100%"/> |
 
-Master 모듈
-- BTN_Debounce : start, write, read, stop 버튼 누를 시 좀더 잘 인식하게 하기 위함..
-- SPI_MASTER : rx data를 FND와 LED로 출력
-- FND_Controller : tx_data와 rx data를 FND로 출력
-
-Slave 모듈
-- SPI_MASTER : rx data를 FND와 LED로 출력
-- FND_Controller : tx_data와 rx data를 FND로 출력
+* **Master Module**
+  * `BTN_Debounce` : Start, Write, Read, Stop 커맨드 버튼 입력 디바운싱
+  * `I2C_MASTER` : I2C 커맨드 제어 및 수신 데이터(`rx_data`) LED 출력
+  * `FND_Controller` : 송신 데이터(`tx_data`) 및 수신 데이터(`rx_data`) FND 세그먼트 출력
+* **Slave Module**
+  * `I2C_SLAVE` : Target Address 수신/매칭 및 수신 데이터(`rx_data`) LED 출력
+  * `FND_Controller` : 송신 데이터(`tx_data`) 및 수신 데이터(`rx_data`) FND 세그먼트 출력
 
 <p align="center">
   <img width="85%" alt="I2C Slave FSM" src="https://github.com/user-attachments/assets/287ae3f9-6968-4b59-b1e3-91ffe8e2cb0a" /><br>
@@ -140,16 +136,15 @@ Slave 모듈
   <b>[ SPI Master & Slave Dual Basys3 FPGA 검증 환경 ]</b>
 </p>
 
-Master FPGA Board
-- BTN : start
-- LED : rx data를 LED[15]-LED[8]로 출력
-- FND : tx_data를 왼쪽 2개의 FND, rx data를 오른쪽 2개의 FND로 출력
-- SW  : tx_data를 SW[7]-SW[0]으로 입력 설정
-
-Slave FPGA Board
-- LED : rx data를 LED[15]-LED[7]로 출력
-- FND : tx_data를 왼쪽 2개의 FND, rx data를 오른쪽 2개의 FND로 출력
-- SW  : tx_data를 SW[7]-SW[0]으로 입력 설정
+* **Master FPGA Board Interface**
+  * `BTN` : Start 버튼
+  * `LED` : 수신 데이터(`rx_data`) ➔ `LED[15:8]` 출력
+  * `FND` : 송신 데이터(`tx_data`) ➔ Left 2-Digit, 수신 데이터(`rx_data`) ➔ Right 2-Digit
+  * `SW` : 송신 데이터(`tx_data`) 설정 ➔ `SW[7:0]`
+* **Slave FPGA Board Interface**
+  * `LED` : 수신 데이터(`rx_data`) ➔ `LED[15:8]` 출력
+  * `FND` : 송신 데이터(`tx_data`) ➔ Left 2-Digit, 수신 데이터(`rx_data`) ➔ Right 2-Digit
+  * `SW` : 송신 데이터(`tx_data`) 설정 ➔ `SW[7:0]`
 
 * **Operation Mechanism**
   * **Write**: Slave에 전달할 8-bit Data를 Master Switch로 입력 ➔ Start 버튼 ➔ Write 수행 (Slave의 FND 및 LED에 수신 데이터 출력)
@@ -164,16 +159,15 @@ Slave FPGA Board
   <b>[ I2C Master & Slave Dual Basys3 FPGA 검증 환경 ]</b>
 </p>
 
-Master FPGA Board
-- BTN : cmd_start, cmd_write, cmd_read, cmd stop
-- LED : rx data를 LED[15]-LED[8]로 출력
-- FND : tx_data를 왼쪽 2개의 FND, rx data를 오른쪽 2개의 FND로 출력
-- SW  : tx_data를 SW[7]-SW[0]으로 입력  설정
-
-Slave FPGA Board
-- LED : rx data를 LED[15]-LED[7]로 출력
-- FND : tx_data를 왼쪽 2개의 FND, rx data를 오른쪽 2개의 FND로 출력
-- SW  : tx_data를 SW[7]-SW[0]으로 입력 설정
+* **Master FPGA Board Interface**
+  * `BTN` : Command 버튼 (`cmd_start`, `cmd_write`, `cmd_read`, `cmd_stop`)
+  * `LED` : 수신 데이터(`rx_data`) ➔ `LED[15:8]` 출력
+  * `FND` : 송신 데이터(`tx_data`) ➔ Left 2-Digit, 수신 데이터(`rx_data`) ➔ Right 2-Digit
+  * `SW` : 송신 데이터(`tx_data`) 설정 ➔ `SW[7:0]`
+* **Slave FPGA Board Interface**
+  * `LED` : 수신 데이터(`rx_data`) ➔ `LED[15:8]` 출력
+  * `FND` : 송신 데이터(`tx_data`) ➔ Left 2-Digit, 수신 데이터(`rx_data`) ➔ Right 2-Digit
+  * `SW` : 송신 데이터(`tx_data`) 설정 ➔ `SW[7:0]`
 
 * **Operation Mechanism**
   * **Write**: Start ➔ Switch로 `{Slave Address[7-bit], 0(Write)}` 입력 ➔ Data Write ➔ Slave에 쓸 8-bit Data 입력 ➔ Write ➔ Stop
@@ -195,7 +189,7 @@ https://github.com/user-attachments/assets/f85bdbf6-c75f-4c49-ae7a-770c65fcc10a
 
 https://github.com/user-attachments/assets/898d2a62-41d5-4ec5-955b-9bda2450bc92
 
-* **시연 내용**: Slave Address (`100(10진수)`) 매칭 확인 및 Read/Write 시퀀스 동작 검증
+* **시연 내용**: Slave Address (`100` / Decimal) 매칭 확인 및 Read/Write 시퀀스 동작 검증
 
 ---
 
@@ -215,15 +209,13 @@ https://github.com/user-attachments/assets/898d2a62-41d5-4ec5-955b-9bda2450bc92
 
 | UVM Random Test Result Log | Coverage Definition Script |
 | :---: | :---: |
-| <img src="https://github.com/user-attachments/assets/8a6c8c99-ae53-4c83-8ddb-53be02492ee0" width="100%"/> | <img src="https://github.com/user-attachments/assets/23746421-3d4c-4309-8342-72d33a81d72b" width="60%"/> |
+| <img src="https://github.com/user-attachments/assets/8a6c8c99-ae53-4c83-8ddb-53be02492ee0" width="100%"/> | <img src="https://github.com/user-attachments/assets/23746421-3d4c-4309-8342-72d33a81d72b" width="100%"/> |
 | **Random Test Result (1,999회 PASS)** | **SystemVerilog Coverage Script** |
-
-* **Random Read/Write Test**: 총 **1,999회 Random Transaction 성공 (100% PASS)**
-
 | **VCS Mode 0 Coverage Result** | **VCS TX Data Coverage (100%)** |
 | <img src="https://github.com/user-attachments/assets/de99223f-96d1-422b-9943-d9169e5e21f5" width="100%"/> | <img src="https://github.com/user-attachments/assets/a549dfbb-3c40-47bd-8647-e6e4677e6267" width="100%"/> |
 | **Synopsys VCS Mode 0 Constraint** | **Synopsys VCS Functional Coverage 100%** |
 
+* **Random Read/Write Test**: 총 **1,999회 Random Transaction 성공 (100% PASS)**
 * **Functional Coverage**:
   * `CPOL`, `CPHA`: Mode 0 (`2'b00`) Constraint 설정
   * `TX Data`: Boundary Value (`8'h00`, `8'hFF`) 및 Mid Values (`8'h01` ~ `8'hFE`) 100% 커버리지 달성
@@ -238,15 +230,15 @@ https://github.com/user-attachments/assets/898d2a62-41d5-4ec5-955b-9bda2450bc92
 | :---: | :---: |
 | <img src="https://github.com/user-attachments/assets/c4b539c9-d229-4400-aa72-9d2ca594f7b4" width="100%"/> | <img src="https://github.com/user-attachments/assets/a46d6154-cc49-49d2-b9f0-f79c3832f965" width="100%"/> |
 
-* **문제 상황**
+* **문제 상황 (Problem)**
   * SPI Loopback UVM 검증 환경 실행 시 Master ➔ Slave 전송 데이터에 대해 Scoreboard 비교 결과 **모든 Transaction에서 Mismatch (FAIL) 발생**
 
-* **원인 분석**
-  * Full-Duplex 동작을 검증하기 위해 Write와 Read를 동시에 수행하는 시나리오를 구성하였으나, Scoreboard에서 `tx_data`와 `rx_data`를 **비교하는 타이밍 시점 설정 오류**로 인해 데이터 비교가 1-clock cycle씩 밀려서 출력됨을 확인
+* **원인 분석 (Root Cause)**
+  * Full-Duplex 동작 검증 시, Slave에 미리 데이터를 Write해두지 않은 상태에서 Write와 Read를 동시 수행함에 따라 Scoreboard에서 `tx_data`와 `rx_data`의 **비교 타이밍 시점 오류** 발생 (데이터 비교가 1-clock cycle씩 지연 출력됨)
 
-* **문제 해결**
+* **문제 해결 (Solution)**
   * Slave에서 수신된 `rx_data`를 비교할 때, 현재 전송 중인 `tx_data`가 아닌 이전 클럭에 저장된 `prev_tx_data`와 비교하도록 Scoreboard 및 Monitor 연동 로직 수정
 
-* **고찰**
-  * Full Duplex 방식에 집중한 나머지, slave에 먼저 write를 해놓고 Read를 실시하는 부분을 놓침
--> Scenario 구성 시, 꼼꼼하게 생각해야 함을 느낌
+* **고찰 (Retrospective)**
+  * Full-Duplex 동작 방식 분석에만 집중하여 Slave 내부 버퍼에 Prior Data가 작성되어 있어야 Read가 정상 수행된다는 하드웨어 시퀀스를 초기 시나리오 설계 단계에서 누락했음을 파악함.
+  * UVM Testbench 환경 구성 시 하드웨어의 클럭 단위 Latency와 데이터 파이프라인 구조를 고려한 꼼꼼한 Sequence 시나리오 설계의 중요성을 체득함.
