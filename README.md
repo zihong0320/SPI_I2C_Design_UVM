@@ -209,13 +209,16 @@ https://github.com/user-attachments/assets/898d2a62-41d5-4ec5-955b-9bda2450bc92
 
 | UVM Random Test Result Log | Coverage Definition Script |
 | :---: | :---: |
-| <img src="https://github.com/user-attachments/assets/8a6c8c99-ae53-4c83-8ddb-53be02492ee0" width="100%"/> | <img src="https://github.com/user-attachments/assets/23746421-3d4c-4309-8342-72d33a81d72b" width="100%"/> |
+| <img src="https://github.com/user-attachments/assets/8a6c8c99-ae53-4c83-8ddb-53be02492ee0" width="100%"/> | <img src="https://github.com/user-attachments/assets/23746421-3d4c-4309-8342-72d33a81d72b" width="60%"/> |
 | **Random Test Result (1,999회 PASS)** | **SystemVerilog Coverage Script** |
+* **Random Read/Write Test**: 총 **1,999회 Random Transaction 성공 (100% PASS)**
+
+
+
 | **VCS Mode 0 Coverage Result** | **VCS TX Data Coverage (100%)** |
+| :---: | :---: |
 | <img src="https://github.com/user-attachments/assets/de99223f-96d1-422b-9943-d9169e5e21f5" width="100%"/> | <img src="https://github.com/user-attachments/assets/a549dfbb-3c40-47bd-8647-e6e4677e6267" width="100%"/> |
 | **Synopsys VCS Mode 0 Constraint** | **Synopsys VCS Functional Coverage 100%** |
-
-* **Random Read/Write Test**: 총 **1,999회 Random Transaction 성공 (100% PASS)**
 * **Functional Coverage**:
   * `CPOL`, `CPHA`: Mode 0 (`2'b00`) Constraint 설정
   * `TX Data`: Boundary Value (`8'h00`, `8'hFF`) 및 Mid Values (`8'h01` ~ `8'hFE`) 100% 커버리지 달성
@@ -241,4 +244,4 @@ https://github.com/user-attachments/assets/898d2a62-41d5-4ec5-955b-9bda2450bc92
 
 * **고찰 (Retrospective)**
   * Full-Duplex 동작 방식 분석에만 집중하여 Slave 내부 버퍼에 Prior Data가 작성되어 있어야 Read가 정상 수행된다는 하드웨어 시퀀스를 초기 시나리오 설계 단계에서 누락했음을 파악함.
-  * UVM Testbench 환경 구성 시 하드웨어의 클럭 단위 Latency와 데이터 파이프라인 구조를 고려한 꼼꼼한 Sequence 시나리오 설계의 중요성을 체득함.
+  * UVM Testbench 환경 구성 시 하드웨어의 클럭 단위 Latency와 데이터 파이프라인 구조를 고려한 꼼꼼한 Sequence 시나리오 설계의 중요성을 깨달음
