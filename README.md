@@ -120,10 +120,10 @@
 * **Master Module**
   * `BTN_Debounce` : Start, Write, Read, Stop 커맨드 버튼 입력 디바운싱
   * `I2C_MASTER` : I2C 커맨드 제어 및 수신 데이터(`rx_data`) LED 출력
-  * `FND_Controller` : 송신 데이터(`tx_data`) 및 수신 데이터(`rx_data`) FND 세그먼트 출력
+  * `FND_Controller` : 송신 데이터(`tx_data`) 및 수신 데이터(`rx_data`) FND 출력
 * **Slave Module**
   * `I2C_SLAVE` : Target Address 수신/매칭 및 수신 데이터(`rx_data`) LED 출력
-  * `FND_Controller` : 송신 데이터(`tx_data`) 및 수신 데이터(`rx_data`) FND 세그먼트 출력
+  * `FND_Controller` : 송신 데이터(`tx_data`) 및 수신 데이터(`rx_data`) FND 출력
 
 <br><br>
 
