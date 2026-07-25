@@ -74,7 +74,7 @@
 
 * **Signaling Sequence**
   <p align="center">
-    <img width="70%" alt="I2C Timing Protocol" src="https://github.com/user-attachments/assets/94c99341-0db7-42b3-92b2-c987f4d9c354" />
+    <img width="65%" alt="image" src="https://github.com/user-attachments/assets/57a6b7e7-0472-4ab5-babf-bb2d89df967e" />
   </p>
   
   * **START Condition**: `SCL` = High 유지 중 `SDA` Falling Edge
@@ -102,7 +102,7 @@
   * `SPI_SLAVE` : Mode 0 (`CPOL=0, CPHA=0`) 기준 동작 구현 및 수신 데이터(`rx_data`) LED 출력
   * `FND_Controller` : 송신 데이터(`tx_data`) 및 수신 데이터(`rx_data`) FND 출력
 
-<br>
+<br><br>
 
 <p align="center">
   <img width="80%" alt="SPI Slave FSM" src="https://github.com/user-attachments/assets/09538a6e-6510-4a05-bdaa-d90c41cb9972" /><br>
@@ -125,7 +125,7 @@
   * `I2C_SLAVE` : Target Address 수신/매칭 및 수신 데이터(`rx_data`) LED 출력
   * `FND_Controller` : 송신 데이터(`tx_data`) 및 수신 데이터(`rx_data`) FND 세그먼트 출력
 
-<br>
+<br><br>
 
 <p align="center">
   <img width="85%" alt="I2C Slave FSM" src="https://github.com/user-attachments/assets/287ae3f9-6968-4b59-b1e3-91ffe8e2cb0a" /><br>
