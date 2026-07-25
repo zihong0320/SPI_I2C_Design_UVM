@@ -241,7 +241,7 @@ https://github.com/user-attachments/assets/898d2a62-41d5-4ec5-955b-9bda2450bc92
 | <img src="https://github.com/user-attachments/assets/c4b539c9-d229-4400-aa72-9d2ca594f7b4" width="100%"/> | <img src="https://github.com/user-attachments/assets/a46d6154-cc49-49d2-b9f0-f79c3832f965" width="100%"/> |
 
 * **문제 상황 (Problem)**
-  * SPI Loopback UVM 검증 환경 실행 시 Master ➔ Slave 전송 데이터에 대해 Scoreboard 비교 결과 **모든 Transaction에서 Mismatch (FAIL) 발생**
+  * SPI Loopback UVM 검증 시 Master ➔ Slave 전송 데이터에 대해 Scoreboard 비교 결과 **모든 Transaction에서 Mismatch (FAIL) 발생**
 
 * **원인 분석 (Root Cause)**
   * Full-Duplex 동작 검증 시, Slave에 미리 데이터를 Write해두지 않은 상태에서 Write와 Read를 동시 수행함에 따라 Scoreboard에서 `tx_data`와 `rx_data`의 **비교 타이밍 시점 오류** 발생 (데이터 비교가 1-clock cycle씩 지연 출력됨)
