@@ -51,7 +51,7 @@
 </p>
 
 * **SPI Operating Modes (CPOL & CPHA)**
-  * Master와 Slave 간의 클럭 극성(`CPOL`) 및 위상(`CPHA`) 설정이 상호 일치해야 정상적인 데이터 샘플링이 가능합니다.
+  * Master와 Slave 간의 클럭 극성(`CPOL`) 및 위상(`CPHA`) 설정이 상호 일치해야 정상적인 데이터 샘플링이 가능
   * **Mode 0 (0,0)**: Idle SCLK = Low / Rising Edge: Read(Sample), Falling Edge: Write(Shift)
   * **Mode 1 (0,1)**: Idle SCLK = Low / Rising Edge: Write(Shift), Falling Edge: Read(Sample)
   * **Mode 2 (1,0)**: Idle SCLK = High / Falling Edge: Read(Sample), Rising Edge: Write(Shift)
@@ -79,7 +79,7 @@
   * **STOP Condition**: `SCL` = High 유지 중 `SDA` Rising Edge
   * **Data Valid**: `SCL` = High 동안 `SDA` 데이터 값 유지
 * **Inout Port & Bus Driver Control**
-  * Half-Duplex 특성상 단일 `SDA` 라인을 공유하므로 High-Impedance (`z`) 상태 제어를 통해 입력/출력 충돌을 방지합니다.
+  * Half-Duplex 특성상 단일 `SDA` 라인을 공유하므로 High-Impedance (`z`) 상태 제어를 통해 입력/출력 충돌을 방지
 
 ---
 
@@ -94,10 +94,12 @@
 * **Master Module**
   * `BTN_Debounce` : Start 버튼 입력 디바운싱을 통한 안정적인 신호 검출
   * `SPI_MASTER` : Mode 0 (`CPOL=0, CPHA=0`) 기준 동작 구현 및 수신 데이터(`rx_data`) LED 출력
-  * `FND_Controller` : 송신 데이터(`tx_data`) 및 수신 데이터(`rx_data`) FND 세그먼트 출력
+  * `FND_Controller` : 송신 데이터(`tx_data`) 및 수신 데이터(`rx_data`) FND 출력
 * **Slave Module**
   * `SPI_SLAVE` : Mode 0 (`CPOL=0, CPHA=0`) 기준 동작 구현 및 수신 데이터(`rx_data`) LED 출력
-  * `FND_Controller` : 송신 데이터(`tx_data`) 및 수신 데이터(`rx_data`) FND 세그먼트 출력
+  * `FND_Controller` : 송신 데이터(`tx_data`) 및 수신 데이터(`rx_data`) FND 출력
+
+<br>
 
 <p align="center">
   <img width="80%" alt="SPI Slave FSM" src="https://github.com/user-attachments/assets/09538a6e-6510-4a05-bdaa-d90c41cb9972" /><br>
@@ -119,6 +121,8 @@
 * **Slave Module**
   * `I2C_SLAVE` : Target Address 수신/매칭 및 수신 데이터(`rx_data`) LED 출력
   * `FND_Controller` : 송신 데이터(`tx_data`) 및 수신 데이터(`rx_data`) FND 세그먼트 출력
+
+<br>
 
 <p align="center">
   <img width="85%" alt="I2C Slave FSM" src="https://github.com/user-attachments/assets/287ae3f9-6968-4b59-b1e3-91ffe8e2cb0a" /><br>
