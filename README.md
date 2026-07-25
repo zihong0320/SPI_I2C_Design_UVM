@@ -250,5 +250,5 @@ https://github.com/user-attachments/assets/898d2a62-41d5-4ec5-955b-9bda2450bc92
   * Slave에서 수신된 `rx_data`를 비교할 때, 현재 전송 중인 `tx_data`가 아닌 이전 클럭에 저장된 `prev_tx_data`와 비교하도록 Scoreboard 및 Monitor 연동 로직 수정
 
 * **고찰 (Retrospective)**
-  * Full-Duplex 동작 방식 분석에만 집중하여 Slave 내부 버퍼에 Prior Data가 작성되어 있어야 Read가 정상 수행된다는 하드웨어 시퀀스를 초기 시나리오 설계 단계에서 누락했음을 파악함.
+  * Full-Duplex 동작 방식 분석에만 집중하여 Slave 내부 버퍼에 Prior Data가 작성되어 있어야 Read가 정상 수행된다는 하드웨어 시퀀스를 초기 시나리오 설계 단계에서 누락했음을 파악함
   * UVM Testbench 환경 구성 시 하드웨어의 클럭 단위 Latency와 데이터 파이프라인 구조를 고려한 꼼꼼한 Sequence 시나리오 설계의 중요성을 깨달음
