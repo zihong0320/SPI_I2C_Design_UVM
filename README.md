@@ -48,11 +48,12 @@
 
 
 * **SPI Operating Modes (CPOL & CPHA)**
+
 <p align="center">
-  <img width="80%" alt="SPI Modes" src="https://github.com/user-attachments/assets/88a17380-5a9d-4742-bbec-cc33ca5a8d92" />
+  <img width="65%" alt="SPI Modes" src="https://github.com/user-attachments/assets/88a17380-5a9d-4742-bbec-cc33ca5a8d92" />
 </p>
 
-  * Master와 Slave 간의 클럭 극성(`CPOL`) 및 위상(`CPHA`) 설정이 상호 일치해야 정상적인 데이터 샘플링이 가능
+  * Master와 Slave 간의 클럭 극성(`CPOL`) 및 위상(`CPHA`) 설정이 서로 일치해야 정상적인 데이터 샘플링이 가능
     * **Mode 0 (0,0)**: Idle SCLK = Low / Rising Edge: Read(Sample), Falling Edge: Write(Shift)
     * **Mode 1 (0,1)**: Idle SCLK = Low / Rising Edge: Write(Shift), Falling Edge: Read(Sample)
     * **Mode 2 (1,0)**: Idle SCLK = High / Falling Edge: Read(Sample), Rising Edge: Write(Shift)
@@ -74,7 +75,7 @@
 
 * **Signaling Sequence**
 <p align="center">
-  <img width="85%" alt="I2C Timing Protocol" src="https://github.com/user-attachments/assets/94c99341-0db7-42b3-92b2-c987f4d9c354" />
+  <img width="70%" alt="I2C Timing Protocol" src="https://github.com/user-attachments/assets/94c99341-0db7-42b3-92b2-c987f4d9c354" />
 </p>
 
   * **START Condition**: `SCL` = High 유지 중 `SDA` Falling Edge
