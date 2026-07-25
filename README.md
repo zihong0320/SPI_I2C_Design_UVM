@@ -8,8 +8,8 @@
 ## 📌 0. Summary
 
 ### 🎯 Overview
-- **SPI/I2C Specification 분석 & 설계** : Protocol Specification 분석 및 SPI/I2C Master-Slave RTL 설계
-- **SPI Loopback Architecture 구축 & UVM 검증** : UVM 기반 Random Testbench 환경에서의 기능 검증
+- **SPI/I2C Specification 분석 & RTL 설계** : Protocol Specification 분석 및 SPI/I2C Master-Slave RTL 설계
+- **SPI Loopback Architecture 구성 & UVM 검증** : UVM 기반 Random Testbench 환경에서의 기능 검증
 - **FPGA 하드웨어 검증** : Basys3 2대를 활용한 실시간 Board-to-Board 직렬 데이터 송수신 실증 (Switch / FND / LED)
 
 ---
