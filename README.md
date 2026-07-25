@@ -149,7 +149,7 @@ https://github.com/user-attachments/assets/f85bdbf6-c75f-4c49-ae7a-770c65fcc10a
 
 https://github.com/user-attachments/assets/898d2a62-41d5-4ec5-955b-9bda2450bc92
 
-* **시연 내용**: Slave Address (`7'h40`) 매칭 확인 및 Read/Write 시퀀스 동작 검증
+* **시연 내용**: Slave Address (`100(10진수)`) 매칭 확인 및 Read/Write 시퀀스 동작 검증
 
 ---
 
@@ -169,13 +169,15 @@ https://github.com/user-attachments/assets/898d2a62-41d5-4ec5-955b-9bda2450bc92
 
 | UVM Random Test Result Log | Coverage Definition Script |
 | :---: | :---: |
-| <img src="https://github.com/user-attachments/assets/8a6c8c99-ae53-4c83-8ddb-53be02492ee0" width="100%"/> | <img src="https://github.com/user-attachments/assets/23746421-3d4c-4309-8342-72d33a81d72b" width="100%"/> |
+| <img src="https://github.com/user-attachments/assets/8a6c8c99-ae53-4c83-8ddb-53be02492ee0" width="100%"/> | <img src="https://github.com/user-attachments/assets/23746421-3d4c-4309-8342-72d33a81d72b" width="60%"/> |
 | **Random Test Result (1,999회 PASS)** | **SystemVerilog Coverage Script** |
+
+* **Random Read/Write Test**: 총 **1,999회 Random Transaction 성공 (100% PASS)**
+
 | **VCS Mode 0 Coverage Result** | **VCS TX Data Coverage (100%)** |
 | <img src="https://github.com/user-attachments/assets/de99223f-96d1-422b-9943-d9169e5e21f5" width="100%"/> | <img src="https://github.com/user-attachments/assets/a549dfbb-3c40-47bd-8647-e6e4677e6267" width="100%"/> |
 | **Synopsys VCS Mode 0 Constraint** | **Synopsys VCS Functional Coverage 100%** |
 
-* **Random Read/Write Test**: 총 **1,999회 Random Transaction 성공 (100% PASS)**
 * **Functional Coverage**:
   * `CPOL`, `CPHA`: Mode 0 (`2'b00`) Constraint 설정
   * `TX Data`: Boundary Value (`8'h00`, `8'hFF`) 및 Mid Values (`8'h01` ~ `8'hFE`) 100% 커버리지 달성
