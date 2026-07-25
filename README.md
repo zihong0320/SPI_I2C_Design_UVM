@@ -46,11 +46,12 @@
   * `MISO` (Master In Slave Out) : Slave ➔ Master 데이터 전송
   * `SS / CS` (Slave/Chip Select) : 타겟 Slave 활성화 신호 (Active Low)
 
+
+* **SPI Operating Modes (CPOL & CPHA)**
 <p align="center">
   <img width="80%" alt="SPI Modes" src="https://github.com/user-attachments/assets/88a17380-5a9d-4742-bbec-cc33ca5a8d92" />
 </p>
 
-* **SPI Operating Modes (CPOL & CPHA)**
   * Master와 Slave 간의 클럭 극성(`CPOL`) 및 위상(`CPHA`) 설정이 상호 일치해야 정상적인 데이터 샘플링이 가능
   * **Mode 0 (0,0)**: Idle SCLK = Low / Rising Edge: Read(Sample), Falling Edge: Write(Shift)
   * **Mode 1 (0,1)**: Idle SCLK = Low / Rising Edge: Write(Shift), Falling Edge: Read(Sample)
@@ -70,11 +71,12 @@
   * `SCL` (Serial Clock) : 클럭 동기화 신호
   * `SDA` (Serial Data) : 양방향 데이터 신호 (`inout` 포트)
 
+
+* **Signaling Sequence**
 <p align="center">
   <img width="85%" alt="I2C Timing Protocol" src="https://github.com/user-attachments/assets/94c99341-0db7-42b3-92b2-c987f4d9c354" />
 </p>
 
-* **Signaling Sequence**
   * **START Condition**: `SCL` = High 유지 중 `SDA` Falling Edge
   * **STOP Condition**: `SCL` = High 유지 중 `SDA` Rising Edge
   * **Data Valid**: `SCL` = High 동안 `SDA` 데이터 값 유지
