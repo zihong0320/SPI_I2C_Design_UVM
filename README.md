@@ -137,18 +137,25 @@
 
 ## 📈 4. Result & Verification
 
-### 4.1 Demo Videos
+### 🎬 4.1 Demo Video (SPI Master/Slave)
 
-| SPI Master/Slave Demo Video | I2C Master/Slave Demo Video |
-| :---: | :---: |
-| https://github.com/user-attachments/assets/f85bdbf6-c75f-4c49-ae7a-770c65fcc10a | https://github.com/user-attachments/assets/898d2a62-41d5-4ec5-955b-9bda2450bc92 |
-| *SPI 실시간 Board-to-Board 송수신* | *I2C Address (7'h40) 매칭 및 Read/Write* |
+https://github.com/user-attachments/assets/f85bdbf6-c75f-4c49-ae7a-770c65fcc10a
+
+* **시연 내용**: SPI Protocol 기반 Board-to-Board 실시간 양방향(Full-Duplex) 데이터 송수신 동작 검증
 
 ---
 
-### 4.2 SPI UVM Verification (Synopsys VCS)
+### 🎬 4.2 Demo Video (I2C Master/Slave)
 
-#### 4.2-1 UVM Architecture
+https://github.com/user-attachments/assets/898d2a62-41d5-4ec5-955b-9bda2450bc92
+
+* **시연 내용**: Slave Address (`7'h40`) 매칭 확인 및 Read/Write 시퀀스 동작 검증
+
+---
+
+### 4.3 SPI UVM Verification (Synopsys VCS)
+
+#### 4.3-1 UVM Architecture
 <p align="center">
   <img width="60%" alt="UVM Architecture" src="https://github.com/user-attachments/assets/94fd5795-9b5d-4b79-adc7-56a5c5e990ec" /><br>
   <b>[ UVM Testbench Architecture for SPI Loopback System ]</b>
@@ -156,26 +163,22 @@
 
 * SPI Master와 SPI Slave를 단일 Top Loopback 모듈로 통합 구축 후 UVM Random Constraint 시뮬레이션 수행
 
-#### 4.2-2 Simulation Result & Functional Coverage
+---
 
-<p align="center">
-  <img width="75%" alt="UVM Simulation Result Log" src="https://github.com/user-attachments/assets/8a6c8c99-ae53-4c83-8ddb-53be02492ee0" /><br>
-  <b>[ UVM Random Read/Write Test Result Log ]</b>
-</p>
+#### 4.3-2 Simulation Result & Functional Coverage
 
-* **Full-Duplex Random Read/Write Test**: 총 **1,999회 Random Transaction 성공 (100% PASS)**
-
-<p align="center">
-  <img width="65%" alt="Coverage Script" src="https://github.com/user-attachments/assets/23746421-3d4c-4309-8342-72d33a81d72b" />
-</p>
-
-* **Coverage Definition**:
-  * `CPOL`, `CPHA`: Mode 0 (`2'b00`) Constraint
-  * `TX Data`: Boundary Value (Zero: `8'h00`, Max: `8'hFF`), Mid Values (`8'h01` ~ `8'hFE`)
-
-| VCS Mode 0 Constraint Coverage Result | VCS TX Data Functional Coverage Result (100%) |
+| UVM Random Test Result Log | Coverage Definition Script |
 | :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/8a6c8c99-ae53-4c83-8ddb-53be02492ee0" width="100%"/> | <img src="https://github.com/user-attachments/assets/23746421-3d4c-4309-8342-72d33a81d72b" width="100%"/> |
+| **Random Test Result (1,999회 PASS)** | **SystemVerilog Coverage Script** |
+| **VCS Mode 0 Coverage Result** | **VCS TX Data Coverage (100%)** |
 | <img src="https://github.com/user-attachments/assets/de99223f-96d1-422b-9943-d9169e5e21f5" width="100%"/> | <img src="https://github.com/user-attachments/assets/a549dfbb-3c40-47bd-8647-e6e4677e6267" width="100%"/> |
+| **Synopsys VCS Mode 0 Constraint** | **Synopsys VCS Functional Coverage 100%** |
+
+* **Random Read/Write Test**: 총 **1,999회 Random Transaction 성공 (100% PASS)**
+* **Functional Coverage**:
+  * `CPOL`, `CPHA`: Mode 0 (`2'b00`) Constraint 설정
+  * `TX Data`: Boundary Value (`8'h00`, `8'hFF`) 및 Mid Values (`8'h01` ~ `8'hFE`) 100% 커버리지 달성
 
 ---
 
