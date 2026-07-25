@@ -48,10 +48,9 @@
 
 
 * **SPI Operating Modes (CPOL & CPHA)**
-<p align="center">
-  <img width="65%" alt="SPI Modes" src="https://github.com/user-attachments/assets/88a17380-5a9d-4742-bbec-cc33ca5a8d92" />
-</p>
-
+  <p align="center">
+    <img width="65%" alt="SPI Modes" src="https://github.com/user-attachments/assets/88a17380-5a9d-4742-bbec-cc33ca5a8d92" />
+  </p>
   * Master와 Slave 간의 클럭 극성(`CPOL`) 및 위상(`CPHA`) 설정이 서로 일치해야 정상적인 데이터 샘플링이 가능
     * **Mode 0 (0,0)**: Idle SCLK = Low / Rising Edge: Read(Sample), Falling Edge: Write(Shift)
     * **Mode 1 (0,1)**: Idle SCLK = Low / Rising Edge: Write(Shift), Falling Edge: Read(Sample)
