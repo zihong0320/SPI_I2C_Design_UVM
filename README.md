@@ -234,7 +234,7 @@ https://github.com/user-attachments/assets/898d2a62-41d5-4ec5-955b-9bda2450bc92
 
 ## 🚨 5. TroubleShooting
 
-### 🚨 UVM Loopback 검증 중 Data Mismatch (All Fail) 발생 현상
+### 🚨 UVM Loopback 검증 중 Data Mismatch (All FAIL) 발생 현상
 
 | Random Test Fail Log | Data Shift Analysis |
 | :---: | :---: |
