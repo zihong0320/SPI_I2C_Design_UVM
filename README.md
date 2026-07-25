@@ -240,15 +240,15 @@ https://github.com/user-attachments/assets/898d2a62-41d5-4ec5-955b-9bda2450bc92
 | :---: | :---: |
 | <img src="https://github.com/user-attachments/assets/c4b539c9-d229-4400-aa72-9d2ca594f7b4" width="100%"/> | <img src="https://github.com/user-attachments/assets/a46d6154-cc49-49d2-b9f0-f79c3832f965" width="100%"/> |
 
-* **문제 상황 (Problem)**
+* **문제 상황**:
   * SPI Loopback UVM 검증 시 Master ➔ Slave 전송 데이터에 대해 Scoreboard 비교 결과 **모든 Transaction에서 Mismatch (FAIL) 발생**
 
-* **원인 분석 (Root Cause)**
+* **원인 분석**:
   * Full-Duplex 동작 검증 시, Slave에 미리 데이터를 Write해두지 않은 상태에서 Write와 Read를 동시 수행함에 따라 Scoreboard에서 `tx_data`와 `rx_data`의 **비교 타이밍 시점 오류** 발생 (데이터 비교가 1-clock cycle씩 지연 출력됨)
 
-* **문제 해결 (Solution)**
+* **문제 해결**:
   * Slave에서 수신된 `rx_data`를 비교할 때, 현재 전송 중인 `tx_data`가 아닌 이전 클럭에 저장된 `prev_tx_data`와 비교하도록 Scoreboard 및 Monitor 연동 로직 수정
 
-* **고찰 (Retrospective)**
+* **고찰**:
   * Full-Duplex 동작 방식 분석에만 집중하여 Slave 내부 버퍼에 Prior Data가 작성되어 있어야 Read가 정상 수행된다는 하드웨어 시퀀스를 초기 시나리오 설계 단계에서 누락했음을 파악함
   * UVM Testbench 환경 구성 시 하드웨어의 클럭 단위 Latency와 데이터 파이프라인 구조를 고려한 꼼꼼한 Sequence 시나리오 설계의 중요성을 깨달음
