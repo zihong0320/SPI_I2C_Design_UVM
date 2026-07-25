@@ -73,15 +73,14 @@
 
 
 * **Signaling Sequence**
-<p align="center">
-  <img width="70%" alt="I2C Timing Protocol" src="https://github.com/user-attachments/assets/94c99341-0db7-42b3-92b2-c987f4d9c354" />
-</p>
-
+  <p align="center">
+    <img width="70%" alt="I2C Timing Protocol" src="https://github.com/user-attachments/assets/94c99341-0db7-42b3-92b2-c987f4d9c354" />
+  </p>
   * **START Condition**: `SCL` = High 유지 중 `SDA` Falling Edge
   * **STOP Condition**: `SCL` = High 유지 중 `SDA` Rising Edge
   * **Data Valid**: `SCL` = High 동안 `SDA` 데이터 값 유지
 
-- **Inout Port & Bus Driver Control**
+* **Inout Port & Bus Driver Control**
   * Half-Duplex 특성상 단일 `SDA` 라인을 공유하므로 High-Impedance (`z`) 상태 제어를 통해 입력/출력 충돌을 방지
 
 ---
