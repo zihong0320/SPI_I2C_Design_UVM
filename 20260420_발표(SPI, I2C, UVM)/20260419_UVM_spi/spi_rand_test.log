@@ -1,0 +1,808 @@
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid re-execution or '-suppress=ASLR_DETECTED_INFO' to suppress this message.
+Chronologic VCS simulator copyright 1991-2024
+Contains Synopsys proprietary information.
+Compiler version W-2024.09-SP1_Full64; Runtime version W-2024.09-SP1_Full64;  Apr 20 01:12 2026
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+
+ VCS Coverage Metrics Release W-2024.09-SP1_Full64 Copyright (c) 1991-2024 by Synopsys Inc.
+UVM_INFO @ 0: reporter [RNTST] Running test spi_rand_test...
+*Verdi* Loading libsscore_vcs202409.so
+FSDB Dumper for VCS, Release Verdi_W-2024.09-SP2, Linux x86_64/64bit, 03/03/2025
+(C) 1996 - 2025 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'novas.fsdb'
+*Verdi* : Begin traversing the scope (tb_spi_uvm), layer (0).
+*Verdi* : Enable +all dumping.
+*Verdi* : End of traversing.
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 115000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x2e, S_TX:0x42 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 1175000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x2e
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 1175000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x42
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 1175000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x42
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 1175000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x00
+UVM_INFO ./tb/tb_spi_loopback.sv(279) @ 1175000: uvm_test_top.env.scb [SCB_M2S] First transaction: skipping comparison
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 1175000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x42) -> M_RX(0x42) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 1265000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xb8, S_TX:0xe1 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 2325000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xb8
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 2325000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xe1
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 2325000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xe1
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 2325000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x2e
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 2325000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x2e) == S_RX(0x2e)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 2325000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xe1) -> M_RX(0xe1) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 2415000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x17, S_TX:0xcb | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 3475000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x17
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 3475000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xcb
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 3475000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xcb
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 3475000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xb8
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 3475000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xb8) == S_RX(0xb8)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 3475000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xcb) -> M_RX(0xcb) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 3565000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x69, S_TX:0x18 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 4625000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x69
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 4625000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x18
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 4625000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x18
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 4625000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x17
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 4625000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x17) == S_RX(0x17)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 4625000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x18) -> M_RX(0x18) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 4715000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x76, S_TX:0x78 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 5775000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x76
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 5775000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x78
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 5775000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x78
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 5775000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x69
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 5775000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x69) == S_RX(0x69)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 5775000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x78) -> M_RX(0x78) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 5865000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x87, S_TX:0xc4 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 6925000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x87
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 6925000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xc4
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 6925000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xc4
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 6925000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x76
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 6925000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x76) == S_RX(0x76)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 6925000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xc4) -> M_RX(0xc4) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 7015000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x7a, S_TX:0x8a | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 8075000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x7a
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 8075000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x8a
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 8075000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x8a
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 8075000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x87
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 8075000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x87) == S_RX(0x87)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 8075000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x8a) -> M_RX(0x8a) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 8165000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xdc, S_TX:0x72 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 9225000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xdc
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 9225000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x72
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 9225000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x72
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 9225000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x7a
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 9225000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x7a) == S_RX(0x7a)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 9225000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x72) -> M_RX(0x72) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 9315000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x6b, S_TX:0x5d | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 10375000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x6b
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 10375000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x5d
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 10375000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x5d
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 10375000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xdc
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 10375000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xdc) == S_RX(0xdc)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 10375000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x5d) -> M_RX(0x5d) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 10465000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xc1, S_TX:0x58 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 11525000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xc1
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 11525000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x58
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 11525000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x58
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 11525000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x6b
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 11525000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x6b) == S_RX(0x6b)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 11525000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x58) -> M_RX(0x58) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 11615000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xea, S_TX:0x36 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 12675000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xea
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 12675000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x36
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 12675000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x36
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 12675000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xc1
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 12675000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xc1) == S_RX(0xc1)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 12675000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x36) -> M_RX(0x36) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 12765000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x34, S_TX:0x5f | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 13825000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x34
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 13825000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x5f
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 13825000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x5f
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 13825000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xea
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 13825000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xea) == S_RX(0xea)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 13825000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x5f) -> M_RX(0x5f) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 13915000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x43, S_TX:0x6e | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 14975000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x43
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 14975000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x6e
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 14975000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x6e
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 14975000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x34
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 14975000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x34) == S_RX(0x34)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 14975000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x6e) -> M_RX(0x6e) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 15065000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x82, S_TX:0x4b | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 16125000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x82
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 16125000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x4b
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 16125000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x4b
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 16125000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x43
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 16125000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x43) == S_RX(0x43)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 16125000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x4b) -> M_RX(0x4b) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 16215000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xd8, S_TX:0x66 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 17275000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xd8
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 17275000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x66
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 17275000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x66
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 17275000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x82
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 17275000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x82) == S_RX(0x82)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 17275000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x66) -> M_RX(0x66) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 17365000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x96, S_TX:0x72 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 18425000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x96
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 18425000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x72
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 18425000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x72
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 18425000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xd8
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 18425000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xd8) == S_RX(0xd8)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 18425000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x72) -> M_RX(0x72) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 18515000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x3d, S_TX:0x24 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 19575000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x3d
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 19575000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x24
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 19575000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x24
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 19575000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x96
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 19575000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x96) == S_RX(0x96)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 19575000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x24) -> M_RX(0x24) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 19665000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x84, S_TX:0xa0 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 20725000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x84
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 20725000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xa0
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 20725000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xa0
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 20725000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x3d
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 20725000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x3d) == S_RX(0x3d)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 20725000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xa0) -> M_RX(0xa0) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 20815000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x6a, S_TX:0x0b | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 21875000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x6a
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 21875000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x0b
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 21875000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x0b
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 21875000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x84
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 21875000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x84) == S_RX(0x84)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 21875000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x0b) -> M_RX(0x0b) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 21965000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x3a, S_TX:0xbd | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 23025000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x3a
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 23025000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xbd
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 23025000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xbd
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 23025000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x6a
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 23025000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x6a) == S_RX(0x6a)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 23025000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xbd) -> M_RX(0xbd) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 23115000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xe2, S_TX:0xd4 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 24175000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xe2
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 24175000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xd4
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 24175000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xd4
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 24175000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x3a
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 24175000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x3a) == S_RX(0x3a)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 24175000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xd4) -> M_RX(0xd4) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 24265000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x87, S_TX:0xed | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 25325000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x87
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 25325000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xed
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 25325000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xed
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 25325000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xe2
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 25325000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xe2) == S_RX(0xe2)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 25325000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xed) -> M_RX(0xed) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 25415000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xfe, S_TX:0x6c | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 26475000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xfe
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 26475000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x6c
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 26475000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x6c
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 26475000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x87
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 26475000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x87) == S_RX(0x87)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 26475000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x6c) -> M_RX(0x6c) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 26565000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xf1, S_TX:0x58 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 27625000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xf1
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 27625000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x58
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 27625000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x58
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 27625000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xfe
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 27625000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xfe) == S_RX(0xfe)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 27625000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x58) -> M_RX(0x58) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 27715000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xb7, S_TX:0xb0 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 28775000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xb7
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 28775000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xb0
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 28775000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xb0
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 28775000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xf1
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 28775000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xf1) == S_RX(0xf1)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 28775000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xb0) -> M_RX(0xb0) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 28865000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x32, S_TX:0xd3 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 29925000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x32
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 29925000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xd3
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 29925000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xd3
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 29925000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xb7
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 29925000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xb7) == S_RX(0xb7)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 29925000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xd3) -> M_RX(0xd3) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 30015000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xd5, S_TX:0x2c | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 31075000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xd5
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 31075000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x2c
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 31075000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x2c
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 31075000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x32
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 31075000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x32) == S_RX(0x32)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 31075000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x2c) -> M_RX(0x2c) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 31165000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xa4, S_TX:0x43 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 32225000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xa4
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 32225000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x43
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 32225000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x43
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 32225000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xd5
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 32225000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xd5) == S_RX(0xd5)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 32225000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x43) -> M_RX(0x43) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 32315000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xd8, S_TX:0xe8 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 33375000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xd8
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 33375000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xe8
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 33375000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xe8
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 33375000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xa4
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 33375000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xa4) == S_RX(0xa4)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 33375000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xe8) -> M_RX(0xe8) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 33465000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x63, S_TX:0xca | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 34525000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x63
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 34525000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xca
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 34525000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xca
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 34525000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xd8
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 34525000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xd8) == S_RX(0xd8)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 34525000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xca) -> M_RX(0xca) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 34615000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xa7, S_TX:0xef | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 35675000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xa7
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 35675000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xef
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 35675000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xef
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 35675000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x63
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 35675000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x63) == S_RX(0x63)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 35675000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xef) -> M_RX(0xef) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 35765000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xfa, S_TX:0x83 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 36825000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xfa
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 36825000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x83
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 36825000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x83
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 36825000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xa7
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 36825000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xa7) == S_RX(0xa7)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 36825000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x83) -> M_RX(0x83) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 36915000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xdd, S_TX:0xc5 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 37975000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xdd
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 37975000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xc5
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 37975000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xc5
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 37975000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xfa
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 37975000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xfa) == S_RX(0xfa)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 37975000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xc5) -> M_RX(0xc5) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 38065000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x49, S_TX:0x33 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 39125000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x49
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 39125000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x33
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 39125000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x33
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 39125000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xdd
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 39125000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xdd) == S_RX(0xdd)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 39125000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x33) -> M_RX(0x33) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 39215000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x72, S_TX:0x62 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 40275000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x72
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 40275000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x62
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 40275000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x62
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 40275000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x49
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 40275000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x49) == S_RX(0x49)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 40275000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x62) -> M_RX(0x62) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 40365000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x9d, S_TX:0x1f | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 41425000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x9d
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 41425000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x1f
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 41425000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x1f
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 41425000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x72
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 41425000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x72) == S_RX(0x72)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 41425000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x1f) -> M_RX(0x1f) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 41515000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x92, S_TX:0x6c | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 42575000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x92
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 42575000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x6c
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 42575000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x6c
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 42575000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x9d
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 42575000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x9d) == S_RX(0x9d)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 42575000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x6c) -> M_RX(0x6c) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 42665000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x58, S_TX:0xcb | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 43725000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x58
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 43725000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xcb
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 43725000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xcb
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 43725000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x92
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 43725000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x92) == S_RX(0x92)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 43725000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xcb) -> M_RX(0xcb) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 43815000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x6e, S_TX:0x09 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 44875000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x6e
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 44875000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x09
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 44875000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x09
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 44875000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x58
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 44875000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x58) == S_RX(0x58)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 44875000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x09) -> M_RX(0x09) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 44965000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x17, S_TX:0x95 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 46025000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x17
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 46025000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x95
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 46025000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x95
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 46025000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x6e
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 46025000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x6e) == S_RX(0x6e)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 46025000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x95) -> M_RX(0x95) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 46115000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x10, S_TX:0x70 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 47175000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x10
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 47175000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x70
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 47175000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x70
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 47175000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x17
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 47175000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x17) == S_RX(0x17)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 47175000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x70) -> M_RX(0x70) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 47265000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xea, S_TX:0x57 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 48325000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xea
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 48325000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x57
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 48325000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x57
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 48325000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x10
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 48325000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x10) == S_RX(0x10)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 48325000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x57) -> M_RX(0x57) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 48415000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x2e, S_TX:0x7e | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 49475000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x2e
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 49475000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x7e
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 49475000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x7e
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 49475000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xea
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 49475000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xea) == S_RX(0xea)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 49475000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x7e) -> M_RX(0x7e) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 49565000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xd8, S_TX:0xdd | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 50625000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xd8
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 50625000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xdd
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 50625000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xdd
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 50625000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x2e
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 50625000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x2e) == S_RX(0x2e)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 50625000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xdd) -> M_RX(0xdd) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 50715000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x3e, S_TX:0xc3 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 51775000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x3e
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 51775000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xc3
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 51775000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xc3
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 51775000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xd8
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 51775000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xd8) == S_RX(0xd8)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 51775000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xc3) -> M_RX(0xc3) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 51865000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x4e, S_TX:0x66 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 52925000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x4e
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 52925000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x66
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 52925000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x66
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 52925000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x3e
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 52925000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x3e) == S_RX(0x3e)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 52925000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x66) -> M_RX(0x66) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 53015000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x61, S_TX:0x48 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 54075000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x61
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 54075000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x48
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 54075000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x48
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 54075000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x4e
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 54075000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x4e) == S_RX(0x4e)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 54075000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x48) -> M_RX(0x48) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 54165000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xff, S_TX:0x91 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 55225000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xff
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 55225000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x91
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 55225000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x91
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 55225000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x61
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 55225000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x61) == S_RX(0x61)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 55225000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x91) -> M_RX(0x91) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 55315000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xa4, S_TX:0x83 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 56375000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xa4
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 56375000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x83
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 56375000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x83
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 56375000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xff
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 56375000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xff) == S_RX(0xff)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 56375000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x83) -> M_RX(0x83) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 56465000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x51, S_TX:0x6c | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 57525000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x51
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 57525000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x6c
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 57525000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x6c
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 57525000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xa4
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 57525000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xa4) == S_RX(0xa4)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 57525000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x6c) -> M_RX(0x6c) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 57615000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x6e, S_TX:0xf1 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 58675000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x6e
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 58675000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xf1
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 58675000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xf1
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 58675000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x51
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 58675000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x51) == S_RX(0x51)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 58675000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xf1) -> M_RX(0xf1) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 58765000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xf7, S_TX:0xd6 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 59825000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xf7
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 59825000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xd6
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 59825000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xd6
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 59825000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x6e
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 59825000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x6e) == S_RX(0x6e)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 59825000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xd6) -> M_RX(0xd6) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 59915000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x87, S_TX:0x34 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 60975000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x87
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 60975000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x34
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 60975000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x34
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 60975000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xf7
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 60975000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xf7) == S_RX(0xf7)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 60975000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x34) -> M_RX(0x34) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 61065000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x60, S_TX:0xaa | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 62125000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x60
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 62125000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xaa
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 62125000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xaa
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 62125000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x87
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 62125000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x87) == S_RX(0x87)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 62125000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xaa) -> M_RX(0xaa) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 62215000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xce, S_TX:0xac | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 63275000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xce
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 63275000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xac
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 63275000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xac
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 63275000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x60
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 63275000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x60) == S_RX(0x60)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 63275000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xac) -> M_RX(0xac) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 63365000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x40, S_TX:0x30 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 64425000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x40
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 64425000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x30
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 64425000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x30
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 64425000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xce
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 64425000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xce) == S_RX(0xce)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 64425000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x30) -> M_RX(0x30) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 64515000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xb4, S_TX:0x6b | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 65575000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xb4
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 65575000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x6b
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 65575000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x6b
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 65575000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x40
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 65575000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x40) == S_RX(0x40)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 65575000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x6b) -> M_RX(0x6b) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 65665000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x44, S_TX:0x3a | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 66725000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x44
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 66725000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x3a
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 66725000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x3a
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 66725000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xb4
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 66725000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xb4) == S_RX(0xb4)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 66725000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x3a) -> M_RX(0x3a) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 66815000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xd0, S_TX:0xeb | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 67875000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xd0
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 67875000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xeb
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 67875000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xeb
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 67875000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x44
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 67875000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x44) == S_RX(0x44)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 67875000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xeb) -> M_RX(0xeb) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 67965000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x11, S_TX:0xc2 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 69025000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x11
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 69025000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xc2
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 69025000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xc2
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 69025000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xd0
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 69025000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xd0) == S_RX(0xd0)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 69025000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xc2) -> M_RX(0xc2) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 69115000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x49, S_TX:0xc4 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 70175000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x49
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 70175000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xc4
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 70175000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xc4
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 70175000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x11
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 70175000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x11) == S_RX(0x11)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 70175000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xc4) -> M_RX(0xc4) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 70265000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x3f, S_TX:0xcd | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 71325000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x3f
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 71325000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xcd
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 71325000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xcd
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 71325000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x49
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 71325000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x49) == S_RX(0x49)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 71325000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xcd) -> M_RX(0xcd) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 71415000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xc7, S_TX:0x78 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 72475000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xc7
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 72475000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x78
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 72475000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x78
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 72475000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x3f
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 72475000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x3f) == S_RX(0x3f)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 72475000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x78) -> M_RX(0x78) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 72565000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xd4, S_TX:0x0c | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 73625000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xd4
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 73625000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x0c
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 73625000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x0c
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 73625000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xc7
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 73625000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xc7) == S_RX(0xc7)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 73625000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x0c) -> M_RX(0x0c) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 73715000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xc7, S_TX:0x3e | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 74775000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xc7
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 74775000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x3e
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 74775000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x3e
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 74775000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xd4
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 74775000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xd4) == S_RX(0xd4)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 74775000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x3e) -> M_RX(0x3e) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 74865000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xad, S_TX:0x96 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 75925000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xad
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 75925000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x96
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 75925000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x96
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 75925000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xc7
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 75925000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xc7) == S_RX(0xc7)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 75925000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x96) -> M_RX(0x96) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 76015000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xb5, S_TX:0x5f | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 77075000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xb5
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 77075000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x5f
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 77075000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x5f
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 77075000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xad
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 77075000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xad) == S_RX(0xad)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 77075000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x5f) -> M_RX(0x5f) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 77165000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x57, S_TX:0x45 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 78225000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x57
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 78225000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x45
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 78225000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x45
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 78225000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xb5
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 78225000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xb5) == S_RX(0xb5)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 78225000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x45) -> M_RX(0x45) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 78315000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x0a, S_TX:0x7b | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 79375000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x0a
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 79375000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x7b
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 79375000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x7b
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 79375000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x57
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 79375000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x57) == S_RX(0x57)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 79375000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x7b) -> M_RX(0x7b) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 79465000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xd3, S_TX:0xaa | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 80525000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xd3
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 80525000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xaa
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 80525000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xaa
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 80525000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x0a
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 80525000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x0a) == S_RX(0x0a)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 80525000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xaa) -> M_RX(0xaa) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 80615000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x18, S_TX:0xe9 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 81675000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x18
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 81675000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xe9
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 81675000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xe9
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 81675000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xd3
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 81675000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xd3) == S_RX(0xd3)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 81675000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xe9) -> M_RX(0xe9) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 81765000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x7a, S_TX:0x06 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 82825000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x7a
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 82825000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x06
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 82825000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x06
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 82825000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x18
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 82825000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x18) == S_RX(0x18)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 82825000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x06) -> M_RX(0x06) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 82915000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xb2, S_TX:0x70 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 83975000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xb2
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 83975000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x70
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 83975000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x70
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 83975000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x7a
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 83975000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x7a) == S_RX(0x7a)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 83975000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x70) -> M_RX(0x70) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 84065000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x1b, S_TX:0x2f | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 85125000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x1b
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 85125000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x2f
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 85125000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x2f
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 85125000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xb2
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 85125000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xb2) == S_RX(0xb2)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 85125000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x2f) -> M_RX(0x2f) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 85215000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x2b, S_TX:0xf4 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 86275000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x2b
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 86275000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xf4
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 86275000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xf4
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 86275000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x1b
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 86275000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x1b) == S_RX(0x1b)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 86275000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xf4) -> M_RX(0xf4) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 86365000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x4d, S_TX:0xa2 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 87425000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x4d
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 87425000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xa2
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 87425000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xa2
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 87425000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x2b
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 87425000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x2b) == S_RX(0x2b)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 87425000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xa2) -> M_RX(0xa2) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 87515000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x50, S_TX:0xac | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 88575000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x50
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 88575000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xac
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 88575000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xac
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 88575000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x4d
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 88575000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x4d) == S_RX(0x4d)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 88575000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xac) -> M_RX(0xac) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 88665000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x70, S_TX:0xe8 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 89725000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x70
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 89725000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xe8
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 89725000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xe8
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 89725000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x50
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 89725000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x50) == S_RX(0x50)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 89725000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xe8) -> M_RX(0xe8) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 89815000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x24, S_TX:0x0c | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 90875000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x24
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 90875000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x0c
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 90875000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x0c
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 90875000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x70
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 90875000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x70) == S_RX(0x70)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 90875000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x0c) -> M_RX(0x0c) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 90965000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x75, S_TX:0x49 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 92025000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x75
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 92025000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x49
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 92025000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x49
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 92025000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x24
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 92025000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x24) == S_RX(0x24)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 92025000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x49) -> M_RX(0x49) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 92115000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x98, S_TX:0x40 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 93175000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x98
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 93175000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x40
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 93175000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x40
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 93175000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x75
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 93175000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x75) == S_RX(0x75)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 93175000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x40) -> M_RX(0x40) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 93265000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x26, S_TX:0xcf | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 94325000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x26
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 94325000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xcf
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 94325000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xcf
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 94325000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x98
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 94325000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x98) == S_RX(0x98)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 94325000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xcf) -> M_RX(0xcf) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 94415000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xaf, S_TX:0x86 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 95475000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xaf
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 95475000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x86
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 95475000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x86
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 95475000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x26
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 95475000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x26) == S_RX(0x26)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 95475000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x86) -> M_RX(0x86) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 95565000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x1f, S_TX:0x1a | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 96625000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x1f
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 96625000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x1a
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 96625000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x1a
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 96625000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xaf
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 96625000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xaf) == S_RX(0xaf)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 96625000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x1a) -> M_RX(0x1a) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 96715000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x8a, S_TX:0xcf | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 97775000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x8a
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 97775000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xcf
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 97775000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xcf
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 97775000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x1f
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 97775000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x1f) == S_RX(0x1f)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 97775000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xcf) -> M_RX(0xcf) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 97865000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x60, S_TX:0x40 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 98925000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x60
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 98925000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x40
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 98925000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x40
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 98925000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x8a
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 98925000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x8a) == S_RX(0x8a)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 98925000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x40) -> M_RX(0x40) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 99015000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x61, S_TX:0x24 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 100075000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x61
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 100075000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x24
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 100075000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x24
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 100075000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x60
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 100075000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x60) == S_RX(0x60)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 100075000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x24) -> M_RX(0x24) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 100165000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x4b, S_TX:0xae | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 101225000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x4b
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 101225000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xae
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 101225000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xae
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 101225000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x61
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 101225000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x61) == S_RX(0x61)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 101225000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xae) -> M_RX(0xae) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 101315000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xee, S_TX:0xb0 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 102375000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xee
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 102375000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xb0
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 102375000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xb0
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 102375000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x4b
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 102375000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x4b) == S_RX(0x4b)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 102375000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xb0) -> M_RX(0xb0) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 102465000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x26, S_TX:0xd1 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 103525000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x26
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 103525000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xd1
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 103525000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xd1
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 103525000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xee
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 103525000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xee) == S_RX(0xee)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 103525000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xd1) -> M_RX(0xd1) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 103615000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xd9, S_TX:0xef | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 104675000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xd9
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 104675000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xef
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 104675000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xef
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 104675000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x26
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 104675000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x26) == S_RX(0x26)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 104675000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xef) -> M_RX(0xef) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 104765000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xa4, S_TX:0xa8 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 105825000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xa4
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 105825000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xa8
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 105825000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xa8
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 105825000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xd9
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 105825000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xd9) == S_RX(0xd9)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 105825000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xa8) -> M_RX(0xa8) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 105915000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x54, S_TX:0x65 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 106975000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x54
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 106975000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x65
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 106975000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x65
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 106975000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xa4
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 106975000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xa4) == S_RX(0xa4)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 106975000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x65) -> M_RX(0x65) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 107065000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x3f, S_TX:0x5e | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 108125000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x3f
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 108125000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x5e
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 108125000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x5e
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 108125000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x54
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 108125000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x54) == S_RX(0x54)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 108125000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x5e) -> M_RX(0x5e) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 108215000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x34, S_TX:0xe9 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 109275000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x34
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 109275000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xe9
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 109275000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xe9
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 109275000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x3f
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 109275000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x3f) == S_RX(0x3f)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 109275000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xe9) -> M_RX(0xe9) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 109365000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0x3b, S_TX:0x9c | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 110425000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0x3b
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 110425000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x9c
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 110425000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x9c
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 110425000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x34
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 110425000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x34) == S_RX(0x34)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 110425000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x9c) -> M_RX(0x9c) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 110515000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xd5, S_TX:0x58 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 111575000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xd5
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 111575000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x58
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 111575000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x58
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 111575000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0x3b
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 111575000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0x3b) == S_RX(0x3b)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 111575000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x58) -> M_RX(0x58) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 111665000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xd2, S_TX:0xbb | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 112725000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xd2
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 112725000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0xbb
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 112725000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0xbb
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 112725000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xd5
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 112725000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xd5) == S_RX(0xd5)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 112725000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0xbb) -> M_RX(0xbb) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 112815000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xfe, S_TX:0x8e | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 113875000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xfe
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 113875000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x8e
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 113875000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x8e
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 113875000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xd2
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 113875000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xd2) == S_RX(0xd2)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 113875000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x8e) -> M_RX(0x8e) [Mode:0]
+UVM_INFO ./tb/tb_spi_loopback.sv(93) @ 113965000: uvm_test_top.env.agt.sqr@@seq [spi_rand_seq] MODE:0 | M_TX:0xcd, S_TX:0x23 | M_RX:0xxx, S_RX:0xxx
+UVM_INFO ./tb/tb_spi_loopback.sv(184) @ 115025000: uvm_test_top.env.agt.mon [spi_monitor] [Master_TX] tx_data_m = 0xcd
+UVM_INFO ./tb/tb_spi_loopback.sv(187) @ 115025000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_TX] tx_data_s = 0x23
+UVM_INFO ./tb/tb_spi_loopback.sv(190) @ 115025000: uvm_test_top.env.agt.mon [spi_monitor] [Master_RX] rx_data_m = 0x23
+UVM_INFO ./tb/tb_spi_loopback.sv(193) @ 115025000: uvm_test_top.env.agt.mon [spi_monitor] [Slave_RX] rx_data_s = 0xfe
+UVM_INFO ./tb/tb_spi_loopback.sv(289) @ 115025000: uvm_test_top.env.scb [SCB_M2S] Match! M_TX(0xfe) == S_RX(0xfe)
+UVM_INFO ./tb/tb_spi_loopback.sv(304) @ 115025000: uvm_test_top.env.scb [SCB_S2M] Match! S_TX(0x23) -> M_RX(0x23) [Mode:0]
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_objection.svh(1276) @ 115115000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO ./tb/tb_spi_loopback.sv(388) @ 115115000: uvm_test_top.env.cov [spi_coverage] 
+
+UVM_INFO ./tb/tb_spi_loopback.sv(389) @ 115115000: uvm_test_top.env.cov [spi_coverage]  ===== SPI Coverage Summary =====
+UVM_INFO ./tb/tb_spi_loopback.sv(390) @ 115115000: uvm_test_top.env.cov [spi_coverage]   Overall Coverage : 83.3%
+UVM_INFO ./tb/tb_spi_loopback.sv(392) @ 115115000: uvm_test_top.env.cov [spi_coverage]  ---------------------------------
+UVM_INFO ./tb/tb_spi_loopback.sv(394) @ 115115000: uvm_test_top.env.cov [spi_coverage]   CPOL Coverage    : 100.0%
+UVM_INFO ./tb/tb_spi_loopback.sv(396) @ 115115000: uvm_test_top.env.cov [spi_coverage]   CPHA Coverage    : 100.0%
+UVM_INFO ./tb/tb_spi_loopback.sv(398) @ 115115000: uvm_test_top.env.cov [spi_coverage]   TX Data Coverage : 66.7%
+UVM_INFO ./tb/tb_spi_loopback.sv(401) @ 115115000: uvm_test_top.env.cov [spi_coverage]  ---------------------------------
+UVM_INFO ./tb/tb_spi_loopback.sv(402) @ 115115000: uvm_test_top.env.cov [spi_coverage]   Cross(Mode, Data): 66.7%
+UVM_INFO ./tb/tb_spi_loopback.sv(404) @ 115115000: uvm_test_top.env.cov [spi_coverage]  =================================
+UVM_INFO ./tb/tb_spi_loopback.sv(405) @ 115115000: uvm_test_top.env.cov [spi_coverage] 
+
+UVM_INFO ./tb/tb_spi_loopback.sv(316) @ 115115000: uvm_test_top.env.scb [spi_scoreboard] 
+
+UVM_INFO ./tb/tb_spi_loopback.sv(317) @ 115115000: uvm_test_top.env.scb [spi_scoreboard]  =========================================
+UVM_INFO ./tb/tb_spi_loopback.sv(318) @ 115115000: uvm_test_top.env.scb [spi_scoreboard]         SPI SCOREBOARD SUMMARY            
+UVM_INFO ./tb/tb_spi_loopback.sv(319) @ 115115000: uvm_test_top.env.scb [spi_scoreboard]  =========================================
+UVM_INFO ./tb/tb_spi_loopback.sv(320) @ 115115000: uvm_test_top.env.scb [spi_scoreboard]   [Master->Slave]  Pass: 99, Fail: 0
+UVM_INFO ./tb/tb_spi_loopback.sv(322) @ 115115000: uvm_test_top.env.scb [spi_scoreboard]   [Slave->Master]  Pass: 100, Fail: 0
+UVM_INFO ./tb/tb_spi_loopback.sv(324) @ 115115000: uvm_test_top.env.scb [spi_scoreboard]  -----------------------------------------
+UVM_INFO ./tb/tb_spi_loopback.sv(325) @ 115115000: uvm_test_top.env.scb [spi_scoreboard]   Total Successful Transfers: 199
+UVM_INFO ./tb/tb_spi_loopback.sv(327) @ 115115000: uvm_test_top.env.scb [spi_scoreboard]  =========================================
+UVM_INFO ./tb/tb_spi_loopback.sv(332) @ 115115000: uvm_test_top.env.scb [spi_scoreboard] Test Result: PASSED
+UVM_INFO ./tb/tb_spi_loopback.sv(334) @ 115115000: uvm_test_top.env.scb [spi_scoreboard] 
+
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_report_catcher.svh(705) @ 115115000: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_report_server.svh(904) @ 115115000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  726
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[SCB_M2S]   100
+[SCB_S2M]   100
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+[UVM/REPORT/CATCHER]     1
+[spi_coverage]    11
+[spi_monitor]   400
+[spi_rand_seq]   100
+[spi_scoreboard]    11
+
+$finish called from file "/tools/synopsys/vcs/W-2024.09-SP1/etc/uvm-1.2/base/uvm_root.svh", line 527.
+$finish at simulation time            115115000
+
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitored
+---------------------------------------------------------------------------
+
+ Coverage status: End of All Coverages ...
+
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 115115000 ps
+CPU Time:      0.260 seconds;       Data structure size:   0.6Mb
+Mon Apr 20 01:12:29 2026
