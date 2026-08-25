@@ -105,8 +105,14 @@
 <br><br>
 
 <p align="center">
+  <img width="701" height="657" alt="image" src="https://github.com/user-attachments/assets/0f362a8f-f170-4a3b-b785-6c0a5f70068f" /><br>
+  <b>[ SPI Master ASM State Transition (Mode 0 기준) ]</b>
+</p>
+
+
+<p align="center">
   <img width="80%" alt="SPI Slave FSM" src="https://github.com/user-attachments/assets/09538a6e-6510-4a05-bdaa-d90c41cb9972" /><br>
-  <b>[ SPI Slave FSM State Transition (Mode 0 기준) ]</b>
+  <b>[ SPI Slave ASM State Transition (Mode 0 기준) ]</b>
 </p>
 
 ---
