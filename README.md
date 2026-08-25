@@ -204,7 +204,8 @@ https://github.com/user-attachments/assets/898d2a62-41d5-4ec5-955b-9bda2450bc92
 
 #### 4.3-1 UVM Architecture
 <p align="center">
-  <img width="60%" alt="UVM Architecture" src="https://github.com/user-attachments/assets/94fd5795-9b5d-4b79-adc7-56a5c5e990ec" /><br>
+  <img width="1024" height="981" alt="image" src="https://github.com/user-attachments/assets/1a7abec1-23bb-403b-8815-a45c371ce7be" />
+<br>
   <b>[ UVM Testbench Architecture for SPI Loopback System ]</b>
 </p>
 
