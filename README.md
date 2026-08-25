@@ -209,7 +209,7 @@ https://github.com/user-attachments/assets/898d2a62-41d5-4ec5-955b-9bda2450bc92
   <b>[ UVM Testbench Architecture for SPI Loopback System ]</b>
 </p>
 
-* SPI Master와 SPI Slave를 단일 Top Loopback 모듈로 통합 구축 후 UVM Random Constraint 시뮬레이션 수행
+* SPI Master와 SPI Slave를 단일 Top Loopback 모듈로 통합 구축 후 동시 READ/WRITE UVM Random Constraint 시뮬레이션 수행
 
 ---
 
