@@ -170,7 +170,6 @@ class spi_monitor extends uvm_monitor;
             if (vif.mon_cb.done_m) begin
                 //@(vif.mon_cb); 
                 item           = spi_seq_item::type_id::create("item");
-                // 데이터 복사 로직 추가 (필수)
                 item.cpol      = vif.mon_cb.cpol;
                 item.cpha      = vif.mon_cb.cpha;
                 item.tx_data_m = vif.mon_cb.tx_data_m;
@@ -192,69 +191,17 @@ class spi_monitor extends uvm_monitor;
 endclass
 
 // --- SCOREBOARD ---
-// class spi_scoreboard extends uvm_scoreboard;
-//     `uvm_component_utils(spi_scoreboard)
-
-//     // 모니터로부터 데이터를 받기 위한 Analysis Imp 포트
-//     uvm_analysis_imp #(spi_seq_item, spi_scoreboard) ap_imp;
-
-//     // 통계용 카운터
-//     int pass_cnt_m2s = 0;
-//     int fail_cnt_m2s = 0;
-//     int pass_cnt_s2m = 0;
-//     int fail_cnt_s2m = 0;
-
-//     function new(string name, uvm_component parent);
-//         super.new(name, parent);
-//     endfunction
-
-//     function void build_phase(uvm_phase phase);
-//         super.build_phase(phase);
-//         // 포트 생성
-//         ap_imp = new("ap_imp", this);
-//     endfunction
-
-// // 모니터가 ap.write(item)을 호출할 때 실행되는 함수
-// function void write(spi_seq_item t);
-
-//     // [ERROR POINT 1] Master -> Slave (M2S) 검증
-//     // 하드웨어 지연을 고려하지 않고 현재 들어온 아이템(t)의 데이터끼리 바로 비교함.
-//     // 실제로는 Slave의 수신값(rx_data_s)은 '이전' 전송의 Master 값임.
-//     if (t.tx_data_m !== t.rx_data_s) begin
-//         fail_cnt_m2s++;
-//         `uvm_error("SCB_M2S", $sformatf("Mismatch! M_TX(0x%h) != S_RX(0x%h)", t.tx_data_m,
-//                                         t.rx_data_s))
-//     end else begin
-//         pass_cnt_m2s++;
-//         `uvm_info("SCB_M2S", $sformatf(
-//                   "Match! M_TX(0x%h) == S_RX(0x%h)", t.tx_data_m, t.rx_data_s), UVM_MEDIUM)
-//     end
-
-//     // [ERROR POINT 2] Slave -> Master (S2M) 검증
-//     // 이 부분도 마찬가지로 Slave가 데이터를 준비하는 타이밍과 
-//     // Master가 읽어가는 타이밍이 어긋날 경우 Fail이 발생함.
-//     if (t.tx_data_s !== t.rx_data_m) begin
-//         fail_cnt_s2m++;
-//         `uvm_error("SCB_S2M", $sformatf("Mismatch! S_TX(0x%h) != M_RX(0x%h)", t.tx_data_s,
-//                                         t.rx_data_m))
-//     end else begin
-//         pass_cnt_s2m++;
-//         `uvm_info("SCB_S2M", $sformatf(
-//                   "Match! S_TX(0x%h) == M_RX(0x%h)", t.tx_data_s, t.rx_data_m), UVM_MEDIUM)
-//     end
-// endfunction
 class spi_scoreboard extends uvm_scoreboard;
     `uvm_component_utils(spi_scoreboard)
     uvm_analysis_imp #(spi_seq_item, spi_scoreboard) ap_imp;
-
-    // 요청하신 변수명으로 변경
+    
     int pass_cnt_m2s = 0;
     int fail_cnt_m2s = 0;
     int pass_cnt_s2m = 0;
     int fail_cnt_s2m = 0;
     // 이전에 들어온 Master TX 데이터를 저장하는 변수
     logic [7:0] prev_tx_data_m = 8'h00;
-    bit first_trans = 1;  // 첫 번째 전송은 비교에서 제외하기 위함
+    bit first_trans = 1;  // 첫 번째 전송은 비교에서 제외
 
     function new(string name, uvm_component parent);
         super.new(name, parent);
@@ -272,7 +219,7 @@ class spi_scoreboard extends uvm_scoreboard;
             `uvm_info("SCB_M2S", "First transaction: skipping comparison", UVM_LOW)
             first_trans = 0;
         end else begin
-            // 현재의 S_RX를 "이전"의 M_TX와 비교
+            // 현재의 S_RX를 이전의 M_TX와 비교
             if (t.rx_data_s !== prev_tx_data_m) begin
                 fail_cnt_m2s++;
                 `uvm_error("SCB_M2S", $sformatf("Mismatch! Prev_M_TX(0x%h) -> Curr_S_RX(0x%h)",
@@ -284,7 +231,7 @@ class spi_scoreboard extends uvm_scoreboard;
             end
         end
 
-        // 현재 M_TX를 저장해서 다음 트랜잭션 때 S_RX와 비교함
+        // 현재 M_TX를 저장해서 다음 트랜잭션 때 S_RX와 비교
         prev_tx_data_m = t.tx_data_m;
 
         // 2. Slave -> Master (S_TX vs M_RX) 검증
@@ -404,7 +351,7 @@ class spi_env extends uvm_env;
 
     spi_agent    agt;
     spi_scoreboard scb;
-    spi_coverage cov; // 커버리지 추가
+    spi_coverage cov;
 
     function new(string name, uvm_component parent);
         super.new(name, parent);
@@ -467,7 +414,7 @@ module tb_spi_uvm;
         .tx_data_m(s_if.tx_data_m),
         .rx_data_m(s_if.rx_data_m),
         .done_m(s_if.done_m),
-        .busy_m(s_if.busy_m), // <--- 이 포트가 연결되지 않아 Warning이 떴을 확률이 높습니다.
+        .busy_m(s_if.busy_m),
         .tx_data_s(s_if.tx_data_s),
         .rx_data_s(s_if.rx_data_s),
         .done_s(s_if.done_s),
