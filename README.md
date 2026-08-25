@@ -105,7 +105,7 @@
 <br><br>
 
 <p align="center">
-  <img width="55%" alt="image" src="https://github.com/user-attachments/assets/0f362a8f-f170-4a3b-b785-6c0a5f70068f" /><br>
+  <img width="60%" alt="image" src="https://github.com/user-attachments/assets/7197ecb4-6906-47ec-acf1-0763f1c6d58a" /><br>
   <b>[ SPI Master ASM State Transition (Mode 0 기준) ]</b>
 </p>
 
